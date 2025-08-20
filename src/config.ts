@@ -46,7 +46,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "GitHub",
-			url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
+			url: "https://github.com/TiYooY/my-blog", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
@@ -54,15 +54,20 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "Lorem Ipsum",
-	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+	name: "Tarian Yin",
+	bio: "Tarian's World - Long may the sun shine upon you.",
 	links: [
 		{
-			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
+			name: "ResearchGate",
+			icon: "fa6-brands:researchgate", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
+			url: "https://www.researchgate.net/profile/Tianyang-Yin-2",
+		},
+		{
+			name: "Google-scholar",
+			icon: "fa6-brands:google-scholar",
+			url: "https://scholar.google.com/citations?user=knFBiGkAAAAJ",
 		},
 		{
 			name: "Steam",
@@ -72,7 +77,12 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/saicaca/fuwari",
+			url: "https://github.com/tiyooy/my-blog",
+		},
+		{
+			name: "Instagram",
+			icon: "fa6-brands:square-instagram",
+			url: "https://www.instagram.com",
 		},
 	],
 };

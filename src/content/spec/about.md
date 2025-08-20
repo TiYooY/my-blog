@@ -1,7 +1,7 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+This is my bolg for [Tarian](https://github.com/tiyooy/my-blog).
 
-::github{repo="saicaca/fuwari"}
+::github{repo="tiyooy/my-blog"}
 
 > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
