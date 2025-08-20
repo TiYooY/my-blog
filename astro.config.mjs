@@ -31,7 +31,6 @@ export default defineConfig({
 	base: "/",
 	trailingSlash: "always",
 	integrations: [
-		mdx(),
 		tailwind({
 			nesting: true,
 		}),
