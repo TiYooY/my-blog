@@ -1,7 +1,12 @@
 # About
 This is my bolg for [Tarian](https://github.com/tiyooy/my-blog).
 
-::github{repo="tiyooy/my-blog"}
+Here is my personal website [Tianyang Yin](https://github.com/tiyooy).
+
+**Explore more, worry less.**
+
+**浮生若梦，为欢几何。**
+<!-- ::github{repo="tiyooy/my-blog"} -->
 
 > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
