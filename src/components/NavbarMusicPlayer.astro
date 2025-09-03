@@ -1,0 +1,74 @@
+---
+
+---
+
+<div id="navbar-player-container" class="relative">
+  {/* 按钮样式和其它导航栏图标保持一致 */}
+  <button
+    id="navbar-player-toggle"
+    title="打开音乐播放器"
+    class="btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90"
+  >
+    {/* 使用和你其它图标一致的 SVG 图标 */}
+    <svg class="text-[1.25rem]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+  </button>
+
+  {/* 默认隐藏的弹出式播放器面板 */}
+  <div id="player-popup" class="player-popup hidden">
+  <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/ca/song/odoriko/1714599984"></iframe>  </div>
+</div>
+
+<style>
+  /* 因为 Tailwind CSS 无法很好地处理动态添加的 class,
+    所以弹出框本身的样式我们还是在这里定义。
+  */
+  .player-popup {
+    /* 使用绝对定位，相对于父元素的 relative 定位 */
+    position: absolute;
+    /* 定位在按钮下方，并有 10px 间距 */
+    top: calc(100% + 10px);
+    right: 0;
+    
+    width: 280px;
+    padding: 1rem;
+    z-index: 1010; /* 确保在最上层 */
+
+    /* 复用你网站的卡片样式变量，实现主题统一 */
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 0.75rem; /* 12px */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+  .hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  // 获取元素
+  const toggleButton = document.getElementById('navbar-player-toggle');
+  const popup = document.getElementById('player-popup');
+
+  // 安全检查，确保元素都存在
+  if (toggleButton && popup) {
+    
+    // 给按钮添加点击事件，用于切换弹窗的显示和隐藏
+    toggleButton.addEventListener('click', (event) => {
+      // 阻止事件冒泡，防止触发下面的 document 点击事件
+      event.stopPropagation(); 
+      popup.classList.toggle('hidden');
+    });
+
+    // 给整个页面添加点击事件，用于在点击外部时关闭弹窗
+    document.addEventListener('click', (event) => {
+      // 告诉 TypeScript，event.target 就是一个 Node
+      const target = event.target as Node;
+
+      // 检查点击的地方是不是在弹窗和按钮的外部
+      if (!popup.contains(target) && !toggleButton.contains(target)) {
+        popup.classList.add('hidden');
+      }
+    });
+  }
+</script>
