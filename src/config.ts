@@ -72,17 +72,17 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Steam",
 			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			url: "https://steamcommunity.com/id/TiYooY/",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/tiyooy/my-blog",
+			url: "https://github.com/tiyooy",
 		},
 		{
 			name: "Instagram",
 			icon: "fa6-brands:square-instagram",
-			url: "https://www.instagram.com",
+			url: "https://www.instagram.com/tiyong_y/",
 		},
 	],
 };
