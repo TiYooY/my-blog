@@ -1,4 +1,4 @@
-# Welcome to Tarian's worlad
+# Welcome to Tarian's world
 
 This is the official repository for my personal blog, a space where I share my thoughts, learnings, and reflections on life.
 
@@ -13,7 +13,7 @@ This blog serves as my digital journal. The content primarily revolves around:
 
 ## 🚀 Visit the Live Site
 
-You can read the blog here: **[your-blog-url.com](https://tarian.netlify.app/)**
+You can read the blog here: **[Tarian's world](https://tarian.netlify.app/)**
 
 ---
 
