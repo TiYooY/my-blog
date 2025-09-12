@@ -3,7 +3,7 @@ title: When Silence Learns to Dance
 published: 2025-09-01
 description: ''
 image: ''
-tags: [Diary]
+tags: [Whispers]
 category: 'Daily life'
 draft: false 
 lang: ''
